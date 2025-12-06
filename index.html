@@ -14,7 +14,143 @@
 
     <!-- Smoothie order form  -->
     <form id="smoothie-form">
-      <!-- form fields go here next -->
+      <form id="smoothie-form">
+  <!-- CUSTOMER INFO -->
+  <fieldset>
+    <legend>Customer</legend>
+    <label for="customerName">Name:</label>
+    <input
+      type="text"
+      id="customerName"
+      name="customerName"
+      required
+      placeholder="Your name"
+    />
+  </fieldset>
+
+  <!-- SIZE -->
+  <fieldset>
+    <legend>Size</legend>
+    <label>
+      <input type="radio" name="size" value="Small" checked />
+      Small
+    </label>
+    <label>
+      <input type="radio" name="size" value="Medium" />
+      Medium
+    </label>
+    <label>
+      <input type="radio" name="size" value="Large" />
+      Large
+    </label>
+  </fieldset>
+
+  <!-- BASE -->
+  <fieldset>
+    <legend>Base</legend>
+    <label for="base">Choose a base:</label>
+    <select id="base" name="base">
+      <option value="Water">Water</option>
+      <option value="Milk">Milk</option>
+      <option value="Yogurt" selected>Yogurt</option>
+      <option value="Oat milk">Oat milk</option>
+    </select>
+  </fieldset>
+
+  <!-- FRUITS -->
+  <fieldset>
+    <legend>Fruits</legend>
+    <label>
+      <input type="checkbox" name="fruits" value="Banana" />
+      Banana
+    </label>
+    <label>
+      <input type="checkbox" name="fruits" value="Strawberry" />
+      Strawberry
+    </label>
+    <label>
+      <input type="checkbox" name="fruits" value="Blueberry" />
+      Blueberry
+    </label>
+    <label>
+      <input type="checkbox" name="fruits" value="Mango" />
+      Mango
+    </label>
+  </fieldset>
+
+  <!-- EXTRAS -->
+  <fieldset>
+    <legend>Extras</legend>
+    <label>
+      <input type="checkbox" name="extras" value="Protein powder" />
+      Protein powder
+    </label>
+    <label>
+      <input type="checkbox" name="extras" value="Chia seeds" />
+      Chia seeds
+    </label>
+    <label>
+      <input type="checkbox" name="extras" value="Honey" />
+      Honey
+    </label>
+    <label>
+      <input type="checkbox" name="extras" value="Peanut butter" />
+      Peanut butter
+    </label>
+  </fieldset>
+
+  <!-- PREFERENCES -->
+  <fieldset>
+    <legend>Preferences</legend>
+
+    <label for="sweetness">
+      Sweetness level:
+      <span id="sweetnessValue">0</span> / 5
+    </label>
+    <input
+      type="range"
+      id="sweetness"
+      name="sweetness"
+      min="0"
+      max="5"
+      value="0"
+    />
+
+    <label>
+      <input type="checkbox" id="dairyFree" name="dairyFree" />
+      Dairy-free
+    </label>
+  </fieldset>
+
+  <!-- PREMIUM OPTION (FOR LATER) -->
+  <fieldset>
+    <legend>Loyalty</legend>
+    <label>
+      <input type="checkbox" id="premiumCustomer" name="premiumCustomer" />
+      Premium customer (loyalty discount)
+    </label>
+  </fieldset>
+
+  <!-- SPECIAL INSTRUCTIONS -->
+  <fieldset>
+    <legend>Special Instructions</legend>
+    <textarea
+      id="notes"
+      name="notes"
+      rows="3"
+      placeholder="Anything we should know?"
+    ></textarea>
+  </fieldset>
+
+  <!-- LIVE PRICE PREVIEW (FOR LATER) -->
+  <p id="price-preview">
+    Estimated price: <strong>$0.00</strong>
+  </p>
+
+  <!-- ORDER BUTTON -->
+  <button type="submit" id="orderButton">Order Smoothie</button>
+</form>
+
     </form>
 
     <!-- Order summary output -->
