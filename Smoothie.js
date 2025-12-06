@@ -1,10 +1,16 @@
-// Smoothie.js
-// Model classes for smoothie orders.
-
 /**
- * Represents a single smoothie order.
- * Responsible for price calculation and human-readable description.
+ * Smoothie model classes
+ *
+ * The Smoothie and PremiumSmoothie classes are responsible for:
+ * - storing smoothie order data
+ * - building human-readable descriptions
+ * - calculating prices based on size, ingredients, and options
+ *
+ * References:
+ * - MDN Web Docs: JavaScript classes, extends, super
+ *   https://developer.mozilla.org/
  */
+
 class Smoothie {
   /**
    * @param {string} customerName

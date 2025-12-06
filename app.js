@@ -1,5 +1,16 @@
-// app.js
-// Uses Smoothie and PremiumSmoothie classes defined in Smoothie.js.
+/**
+ * Smoothie Machine
+ *
+ * Developed by: Ada Ayman
+ * Course: Javascript
+ *
+ * References (consulted during development):
+ * - MDN Web Docs:
+ *   - addEventListener, querySelector, querySelectorAll, Array.prototype.map
+ *     https://developer.mozilla.org/
+ * - GitHub Pages documentation for static site hosting
+ *
+ */
 
 /**
  * Build a smoothie 

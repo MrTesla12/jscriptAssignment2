@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +9,8 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #f5fff8, #d2f3ff);
+  color: #222;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,14 +18,180 @@ body {
   padding: 2rem;
 }
 
+/*Main container layout */
+
 .container {
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.container > p {
+  margin-bottom: 1.2rem;
+  color: #555;
+}
+
+/* Form layout */
+
+form {
+  margin-top: 0.5rem;
+}
+
+/* Fieldsets group  */
+fieldset {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Labels  */
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* Radio and checkbox  */
+fieldset legend + label,
+fieldset label input[type="radio"],
+fieldset label input[type="checkbox"] {
+  display: inline-block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.35rem;
+}
+
+/* Text inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Range slider */
+input[type="range"] {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+/* sweetness  */
+#sweetnessValue {
+  font-weight: 600;
+}
+
+/* Price preview and submit button */
+
+#price-preview {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+#price-preview strong {
+  font-size: 1.1rem;
+}
+
+/* Primary submit button */
+button[type="submit"] {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff4b5c;
+  box-shadow: 0 6px 14px rgba(255, 75, 92, 0.5);
+  transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/*Order summary  */
+
+#order-summary {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e4e4e4;
+}
+
+#order-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#smoothie-description p {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+#smoothie-price {
+  font-weight: 700;
+  margin: 0.6rem 0 1rem;
+}
+
+/* Smoothie image */
+.smoothie-image {
+  max-width: 220px;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+/* Generic utility class used in HTML and JS */
 .hidden {
   display: none;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
 }
