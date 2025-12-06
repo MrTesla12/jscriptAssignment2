@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Smoothie Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>The Smoothie Machine</h1>
+    <p>Create your perfect smoothie.</p>
+
+    <!-- Smoothie order form  -->
+    <form id="smoothie-form">
+      <!-- form fields go here next -->
+    </form>
+
+    <!-- Order summary output -->
+    <section id="order-summary" class="hidden">
+      <h2>Your Smoothie</h2>
+      <div id="smoothie-description"></div>
+      <p id="smoothie-price"></p>
+      <img
+        id="smoothie-image"
+        alt="Your smoothie"
+        class="smoothie-image hidden"
+      />
+    </section>
+  </main>
+
+  <!-- Class definition file -->
+  <script src="Smoothie.js"></script>
+  <!-- DOM + app logic -->
+  <script src="app.js"></script>
+</body>
+</html>
